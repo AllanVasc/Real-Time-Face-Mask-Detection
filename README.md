@@ -30,7 +30,19 @@ First, a convolution neural network (CNN) was created and trained using Google C
 
 ## 5. Results
 
-...
+<img src="to_readme/Model_Metrics.png">
+
+The classification model was trained for 10 epochs, resulting in a validation percentage of 98.75%. It is possible to observe that we could have used the Early Stop technique to get higher values, but to simplify and not perform checkpoints only the last one was saved.
+
+The variation in accuracy and Loss over the seasons is seen in the 2 graphs below.
+
+Accuracy            |  Loss
+:-------------------------:|:-------------------------:
+![](to_readme/Model_Accuracy.png)  |  ![](to_readme/Model_Loss.png)
+
+<img src="to_readme/Predictions.png">
+
+In this image it is possible to observe some samples used in the validation, the bar in the index "0" means the percentage that the model made the prediction to be of the class "Without_Mask", and the bar in the index "1" the prediction percentage "With_Mask". When the results are in blue it means that the model predicted correctly, when they are in red the model got the final result wrong.
 
 ## 6. Conclusion
 
