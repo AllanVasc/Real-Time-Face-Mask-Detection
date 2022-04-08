@@ -60,15 +60,15 @@ Therefore, we can conclude that the future improvements needed would be the sear
 
 First you need to install all the necessary packages. To do this, type in the terminal:
 
-'''sh
+```sh
 pip install -r requirements.txt
-'''
+```
 
 After that, just run the application with
 
-'''sh
+```sh
 python run.py
-'''
+```
 
 ## 9. References
 
