@@ -38,7 +38,7 @@ The variation in accuracy and Loss over the epochs is seen in the 2 graphs below
 
 Accuracy            |  Loss
 :-------------------------:|:-------------------------:
-![](to_readme/Demo_1.gif)  |  ![](to_readme/Model_Loss.png)
+![](to_readme/Model_Accuracy.png)  |  ![](to_readme/Model_Loss.png)
 
 Below you can see some samples used in the validation, the bar in the index "0" means the percentage that the model made the prediction to be of the class "Without_Mask", and the bar in the index "1" the percentage of prediction "With_Mask". When the results are in blue it means that the model predicted correctly, when they are in red the model got the final result wrong.
 
