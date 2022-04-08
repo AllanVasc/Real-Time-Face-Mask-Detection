@@ -1,12 +1,8 @@
 # Real-Time Face Mask Detection
 
+<img src="to_readme/Demo_Intro.gif">
+
 Using neural networks, this real-time application can locate faces and predict whether they are wearing hygienic masks or not using the computer's webcam.
-
-# :warning: :construction: UNDER CONSTRUCTION :construction: :warning:
-
-# Atualizações necessárias
-
-1. Finish Demo and results
 
 ## 1. Introduction
 
@@ -26,7 +22,11 @@ First, a convolution neural network (CNN) was created and trained using Google C
 
 ## 4. Demo
 
-...
+Different samples            |  Different masks
+:-------------------------:|:-------------------------:
+![](to_readme/Demo_1.gif)  |  ![](to_readme/Demo_2.gif)
+
+It is possible to observe excellent results in different situations, whether with different masks or even different people. It is observed that the application does not work as expected when we have a black mask, but this error is due to the face detection model, not being able to locate its presence and region.
 
 ## 5. Results
 
@@ -38,7 +38,7 @@ The variation in accuracy and Loss over the epochs is seen in the 2 graphs below
 
 Accuracy            |  Loss
 :-------------------------:|:-------------------------:
-![](to_readme/Model_Accuracy.png)  |  ![](to_readme/Model_Loss.png)
+![](to_readme/Demo_1.gif)  |  ![](to_readme/Model_Loss.png)
 
 Below you can see some samples used in the validation, the bar in the index "0" means the percentage that the model made the prediction to be of the class "Without_Mask", and the bar in the index "1" the percentage of prediction "With_Mask". When the results are in blue it means that the model predicted correctly, when they are in red the model got the final result wrong.
 
@@ -56,7 +56,21 @@ Although the application can run in real time, we still have a low FPS rate, aro
 
 Therefore, we can conclude that the future improvements needed would be the search or the creation and training of a better face detector, and to be able to run the algorithm on a GPU, trying our best to increase the FPS rate.
 
-## 8. References
+## 8. How to run
+
+First you need to install all the necessary packages. To do this, type in the terminal:
+
+'''sh
+pip install -r requirements.txt
+'''
+
+After that, just run the application with
+
+'''sh
+python run.py
+'''
+
+## 9. References
 
 [1] - [Kaggle Dataset](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset)
 
